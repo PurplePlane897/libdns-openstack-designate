@@ -21,13 +21,10 @@ func main() {
 
 	provider := designate.Provider{AuthOpenStack: designate.AuthOpenStack{
 		RegionName:         "foo",
-		TenantID:           "123123123",
-		IdentityApiVersion: "2",
-		Password:           "foo-bar-password",
 		AuthURL:            "https://keystone.example.com/v2.0",
-		Username:           "foo-username",
-		TenantName:         "foo-tenant-name",
-		EndpointType:       "publicURL",
+		AuthType:           "v3applicationcredential",
+		ApplicationCredentialId "foo-credential-id"
+		ApplicationCredentiaSecret "foo-credential-secret"
 	}}
 
 	// GET records
