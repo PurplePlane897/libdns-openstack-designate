@@ -126,9 +126,8 @@ func (p *Provider) auth() error {
 
 	opts := gophercloud.AuthOptions{
 		IdentityEndpoint: p.AuthOpenStack.AuthURL,
-		Username:         p.AuthOpenStack.Username,
-		Password:         p.AuthOpenStack.Password,
-		TenantID:         p.AuthOpenStack.TenantID,
+		ApplicationCredentialID: p.AuthOpenStack.ApplicationCredentialId,
+		ApplicationCredentialSecret: p.AuthOpenStack.ApplicationCredentialSecret,
 	}
 
 	provider, err := openstack.AuthenticatedClient(opts)

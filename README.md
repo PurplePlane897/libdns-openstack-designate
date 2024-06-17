@@ -12,13 +12,10 @@ To authenticate you need to supply a OpenStack API credentials and zone name on 
 ## Credentials needed to authenticate to the OpenStack Designate API
 ```bash
  OS_REGION_NAME=""
- OS_TENANT_ID=""
- OS_IDENTITY_API_VERSION=
- OS_PASSWORD=""
  OS_AUTH_URL=""
- OS_USERNAME=""
- OS_TENANT_NAME=""
- OS_ENDPOINT_TYPE=""
+ OS_AUTH_TYPE="" # Should be v3applicationcredential
+ OS_APPLICATION_CREDENTIAL_ID=""
+ OS_APPLICATION_CREDENTIAL_SECRET=""
 ```
 ## Example
 
