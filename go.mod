@@ -1,4 +1,4 @@
-module github.com/libdns/openstack-designate
+module github.com/PurplePlane897/libdns-openstack-designate
 
 go 1.14
 
